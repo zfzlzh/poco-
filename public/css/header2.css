@@ -1,0 +1,255 @@
+header.head{
+    margin-top:1rem;
+    font-size:17px;
+   width:100%
+}
+.left,.right{
+    width:35%;
+}
+.left>div:nth-child(2),
+.right>div:first-child~div{
+line-height: 2.5rem;
+}
+.right>div:last-child>div:first-child>a,
+.left>div:nth-child(2)>div>a
+{
+    color:#aaa;
+}
+/* 左边 */
+header.head,header.head>.left>div>ul{
+    display:flex;
+    justify-content: space-between;
+    margin-top:1rem
+}
+
+header.head>div,header.head>div.right>div:last-child{
+    display:flex;
+    justify-content: space-evenly;
+}
+/* 小导航栏 */
+.left>div:first-child{
+    margin-right:1.5rem;
+}
+.left>div:nth-child(2){
+    width:40%;
+    margin-left:-4.5rem;
+    margin-top:-1rem;
+    font-size:16px;
+   position: relative
+}
+.left>div:nth-child(2)>ul>li>a{
+    color:#aaa
+}
+.left>div:nth-child(2)>ul{
+    position: absolute;
+}
+.left>div:nth-child(2)>ul>li{
+    width:6rem;
+    position: relative
+}
+.left>div:nth-child(2)>ul>li>.submenu{
+    margin-left:-1rem;
+    
+    padding:0 0 0 0.5rem;
+    perspective: 400px;
+}
+.left>div:nth-child(2)>ul>li>.submenu>li
+{
+    margin-bottom:0rem;
+    width:5.5rem;
+    position: absolute;
+    transform: rotateY(90deg);
+    background:#ffffff50;
+    opacity: 0;
+    transition: opacity .4s, transform .5s;
+    padding-left:0.4rem;
+    
+}
+
+
+.left>div:nth-child(2)>ul>li>.submenu>li.fadeMenu{
+    opacity: 1;
+    transform: none;
+    z-index:990;
+}
+.left>div:nth-child(2)>ul>li>.submenu>li:nth-child(1){
+    transition-delay: 0ms;
+    
+}
+.left>div:nth-child(2)>ul>li>.submenu>li:nth-child(2){
+    transition-delay: 150ms;
+    top:2.5rem;
+}
+.left>div:nth-child(2)>ul>li>.submenu>li:nth-child(3){
+    transition-delay: 250ms;
+    top:5rem;
+}
+.left>div:nth-child(2)>ul>li>.submenu>li:nth-child(4){
+    transition-delay: 350ms;
+    top:7.5rem;
+}
+/* 右边 */
+/* 搜索框 */
+.right>div:first-child>svg>use{
+    color:#444;
+}
+.right>div:first-child{
+    margin-left:10rem;
+}
+.right>div:first-child>.select{
+  position: relative;
+  opacity: 0;
+  transition: all .5s linear;
+  left:20rem;
+  z-index: 1;
+}
+
+.right>div:first-child>.select.hasBlock{
+    left:0rem;
+    opacity: 1;
+}
+.right>div:first-child>div>div>input,
+.right>div:first-child>.select>div:first-child{
+    background:rgba(255, 255, 255, 0.514)
+}
+.right>div:first-child>div>div>input{
+  position: absolute;
+  margin-top:0.4rem;
+  border:0;
+  line-height: 1.5rem;
+  width:14rem;
+  left:-14.5rem;
+  
+}
+.right>div:first-child>.select>div:nth-child(2){
+    position: absolute;
+    top:2.5rem;
+    left:-18.5rem;
+    width:90px;
+    background:#fff;
+    display: none;
+  
+   border-radius: 5%;
+   transition: all .5s linear;
+  
+}
+.right>div:first-child>.select>div:nth-child(2).hasBlock
+{ 
+    display: block;
+   
+}
+.right>div:first-child>.select>div:nth-child(2)>ul{
+    width:100%;
+    padding:0 0.1rem;
+    
+}
+.right>div:first-child>.select>div:nth-child(2)>ul>li{
+    z-index:-1;
+    color:rgba(68, 68, 68, 0.477);
+    cursor: pointer;
+   width:5.5rem;
+   height:2rem;
+    line-height: 1.5rem;
+    margin-top:0.4rem;
+   
+}
+.right>div:first-child>.select>div:nth-child(2)>ul>li:hover{
+    background:rgba(68, 68, 68, 0.477);
+    color:#fff;
+    border-radius: 10%;
+}
+
+.right>div:first-child>.select>div:first-child{
+    position: absolute;
+    top:0.4rem;
+    left:-18.5rem;
+    width:64px;
+    height:24px;
+  color:#aaa;
+  font-size:16px;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+.right>div:first-child>svg{
+    margin:0.4rem 0.2rem;
+    width:25px;
+    height:25px;
+    color:rgb(240, 235, 235);
+    cursor: pointer;
+    
+}
+
+
+/* 第二个div */
+.right>div:last-child>div{
+    width:5rem;
+text-align: center;
+    border:0;
+    position: relative;
+    z-index: 999;
+}
+
+/* 登陆 */
+.right>div:last-child>div{
+   
+  width:6rem;
+    height:2.5rem;
+    cursor: pointer;
+}
+.right>div:last-child>div>a{
+    color:#fff;
+}
+.right .notLogin:hover{
+    background:rgba(48, 173, 22, 0.952);
+}
+#top-button{
+    width:241px;
+    height:50px;
+    z-index:9;
+    color:#fff;
+   
+}
+#top-button>h4{
+    float:left;
+    margin:0 10px;
+    height:27px;
+    width:100px;
+    text-align:center;
+    cursor:pointer;
+	line-height:24px;
+	letter-spacing:4px;
+	font-size:18px
+}
+#top-button>.tab2{
+height:50px;
+font-size:14px;
+ overflow: hidden;
+text-overflow: ellipsis;
+-webkit-box-orient:vertical; 
+-webkit-line-clamp:2; 
+}
+
+#top-button>h4.active{
+    background:#46d233;
+}
+#top-button>h4.tab3{
+    background:rgba(48, 173, 22, 0.952);
+	margin-top:0.5rem;
+	font-weight:bold;
+}
+/* 回到顶部 */
+.top{
+    background: #44444471;
+    position: fixed;
+    left:84rem;
+    top:42rem;
+    font-size:20px;
+    width:3rem;
+    height:3rem;
+    text-align: center;
+    line-height: 3.6rem;
+    color:#fff;
+    display:none;
+    cursor: pointer;
+}

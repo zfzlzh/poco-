@@ -1,0 +1,106 @@
+footer.foot{
+    width:80%;
+    margin-left:8rem;
+    margin-top:4rem;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.info>div:first-child{
+    display:flex;
+    flex-direction: column;
+    font-size:15px;
+}
+.info>div:first-child>div{
+    margin-top:0.5rem
+}
+.info>div:first-child>div:nth-child(4){
+    margin-top:0
+}
+.info>div:first-child>div:first-child{
+    width:150px;
+    height:41px;
+}
+.info>div:first-child>div:nth-child(2){
+    flex-wrap: wrap;
+    width:550px;
+    height:40px;
+}
+.info>div:first-child>div:nth-child(3){
+    margin:2rem 0 1rem;
+}
+.info>div:first-child>div:nth-child(3)>ul{
+    display: flex;
+    justify-content:space-between;
+    padding:0;
+}
+.info>div:first-child>div p{
+    color:rgba(68, 68, 68, 0.408)
+}
+.info>div:first-child>div>p>a{
+    color:rgba(68, 68, 68, 0.508)
+}
+.info>div:first-child>div:nth-child(4)>p:first-child>a:last-child,
+footer.foot>div:last-child>div{
+   margin-left:1rem;
+}
+.info>div:nth-child(2)>div:first-child,
+.info>div:nth-child(3)>div:first-child{
+    font-size:20px;
+    font-weight: bold;
+    color:#444;
+    margin-bottom:3rem;
+    margin-top:1rem;
+}
+.info>div:nth-child(2)>div:first-child~div>svg{
+    width:40px;
+    height:40px;
+    margin:0.5rem 1.5rem;
+    cursor: pointer;
+}
+.info>div:nth-child(2)>div>svg{
+    fill:rgba(68, 68, 68, 0.452)
+}
+.info>div:nth-child(2)>div:nth-child(2)>svg:hover{
+    fill:rgb(233, 96, 96)
+}
+.info>div:nth-child(2)>div:nth-child(3)>svg:hover{
+    fill:rgb(74, 226, 74)
+}
+.info>div:last-child{
+    display: flex;
+    flex-direction: column
+}
+.info>div:last-child>div:last-child{
+    display: flex;
+    justify-content: flex-start
+}
+.info>div:last-child>div:last-child>div:last-child>div>svg{
+    width:20px;
+    height:20px;
+}
+
+.info>div:last-child>div:last-child>div:last-child>a>div{
+    text-align: center;
+    margin:1rem 0 0 1rem;
+    border:1px solid rgb(74, 226, 74);
+    width:140px;
+    height:40px;
+    line-height: 2.5rem;
+    color:rgb(74, 226, 74);
+    font-size: 15px;
+    cursor: pointer;
+    background: transparent;
+    transition: all .2s linear;
+}
+.info>div:last-child>div:last-child>div:last-child>a>div:hover{
+    background:rgb(74, 226, 74);
+    color:#fff;
+}
+footer.foot>div:last-child{
+    display: flex;
+    justify-content: center;
+    margin-top:2rem;
+}

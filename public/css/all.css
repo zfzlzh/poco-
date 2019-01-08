@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+padding: 0
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+ body{
+    margin:0;
+    padding:0
+}
+a{
+    text-decoration: none;
+    color:#444;
+}
+ul{
+    list-style: none;
+}
+

@@ -1,0 +1,18 @@
+.header .head{
+    position: relative;
+    z-index:990;
+    width:100%;
+  }
+ .header .head .left div ul li a,
+ .header .head .right>div>.select>div>span,
+ .header .head .right>div:nth-child(2)>div:first-child>a
+  {
+    color:#444;
+  }
+ .header .head .right div svg{
+    fill:#444
+  }
+
+  #top-button>.tab2{
+color:#444
+}

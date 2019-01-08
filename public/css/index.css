@@ -1,0 +1,776 @@
+
+
+/* 身体 */
+/* 头 */
+.index section header .welcome{
+    width:100%;
+    height:583px;
+    border:1px solid #000;
+   position: relative;
+}
+.index>section>header>.welcome>img{
+    width:100%;
+}
+.index>section>header>.welcome>div{
+    background:#25252547;
+    position: absolute;
+    top:0rem;
+    width:100%;
+ 
+}
+.index>section>header>.welcome>div>div:nth-child(2){
+    position: relative;
+    z-index:99;
+}
+.index section header .welcome div div{
+    text-align:center;
+}
+.index section header>.welcome>div>div>p{
+    letter-spacing: 13px;
+    font-size: 32px;
+    line-height: 12rem;
+    margin-bottom:-3rem;
+    color:#fff;
+}
+.index section header .welcome div div button{
+    background:linear-gradient(to right,rgba(5, 253, 158, 0.826) 0%,
+    rgb(88, 226, 100) 80%,rgb(88, 226, 100) 100%);
+    width:180px;
+    height:40px;
+    border:0;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 5px;
+    line-height: 40px;
+    margin-top:1rem;
+    cursor: pointer;
+    
+}
+.index section header .welcome div div button:hover{
+    background:linear-gradient(to right,rgba(7, 185, 117, 0.808) 0%,
+    rgb(65, 189, 75) 80%,rgb(77, 196, 87) 100%);
+}
+.index section header .welcome div div:nth-child(3){
+    height:148px;
+    width:148px;
+    margin:3rem auto 0;
+    background:#fff;
+    padding-top:5px;
+
+}
+
+.index section header .welcome div div:nth-child(4){
+    font-size:10px;
+    line-height:0;
+    letter-spacing: 0;
+   background:#fff;
+   height:20px;
+   width:148px;
+   margin:0 auto 0;
+color:#000
+}
+.index section header .welcome div div:last-child{
+   margin:6.5rem 76rem 0;
+    width:10rem;
+    color:#fff;
+    font-size:1rem;
+}
+
+/* 侧边栏 */
+.index section slider{
+   height:4rem;
+    width:100%;
+    display:flex;
+    justify-content: flex-start;
+    position: fixed;
+    margin-top:2rem;
+    z-index: 99
+}
+.index section slider div:first-child{ 
+    width:60px;
+    height:100%;;
+   cursor: pointer;
+   background:rgba(23, 21, 21, 0.75);
+  
+}
+.index section slider div:last-child{
+   width:100%;
+   background:rgba(255, 255, 255, 0.288);
+   opacity: 0;
+   transition: all .5s linear
+}
+.index>section>slider>div:last-child.fade{
+    opacity: 1;
+}
+.index>section>slider>div>img{
+    margin:1.5rem 1rem
+}
+.index>section>slider>div>ul{
+    display:flex;
+    justify-content: space-around;
+   width:100%;
+   height:100%;
+   margin:1.2rem 0 0 0;
+}
+.index section slider div ul li{
+    list-style: none;
+}
+.index section slider div ul li a:hover{
+background:rgba(48, 173, 22, 0.952);
+	color:#fff
+}
+.index section slider div ul li a{
+    color:#444;
+    font-size:1.3rem;
+    font-weight: bold;
+}
+/* 广告 */
+.index section .ad{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #e7eaee;
+    overflow: hidden;
+    position: relative;
+}
+.index section .ad img{
+    margin-left: 9rem;
+    height: auto;
+    width: 80%;
+    margin-top: 25px;
+    display: block;
+}
+/* 主体 */
+.index section .title{
+    text-align: center;
+    margin: 2rem auto 4rem;
+    font-size: 32px;
+    color: #444;
+    letter-spacing: 4px;
+    display:flex;
+    justify-content: space-evenly;
+    width:20%
+}
+
+.index section .title i{
+    border:4px solid rgba(61, 223, 28, 0.952);
+    border-radius:50%;
+    height:0.5rem;
+    width:0.5rem;
+    margin-top:0.8rem;
+}
+/* 推荐图片 and 其他 */
+.index section .recommend,.other{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding:0 6rem;
+}
+.index section>.recommend>div>a>img,.other>div>a>img{
+    margin-top:1rem;
+}
+.index>section>.recommend>div,.other>div{
+
+    position: relative;
+}
+.index>section>.recommend>div{
+    opacity: 0;
+    transition: all 1s linear;
+}
+.index>section>.recommend>div:nth-child(3),
+.index>section>.recommend>div:nth-child(4){
+    transition-delay:300ms;
+    transform: rotate3d(8,4,0,180deg);
+}
+.index>section>.recommend>div:nth-child(5),
+.index>section>.recommend>div:nth-child(6){
+    transition-delay:600ms;
+    transform: rotate3d(1,0,1,180deg);
+}
+.index>section>.recommend>div:nth-child(7),
+.index>section>.recommend>div:nth-child(8){
+    transition-delay:900ms;
+    transform: rotate3d(1,1,1,180deg);
+}
+.index>section>.recommend>div:nth-child(9),
+.index>section>.recommend>div:nth-child(10){
+    transition-delay:1200ms;
+    transform: rotate3d(1,4,1,180deg);
+}
+.index>section>.recommend>div:nth-child(11),
+.index>section>.recommend>div:nth-child(12){
+    transition-delay:1500ms;
+    transform: rotate3d(0,1,1,190deg);
+}
+.index>section>.recommend>div.bbq{
+    transform: rotate3d(1,1,0,360deg);
+    opacity: 1;
+}
+.index>section>.recommend>div>a>.tag,.other>div>a>.tag{
+    font-size: 16px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 1;
+    background:rgba(0, 0, 0, 0.219);
+    width:58px;
+    height:35px;
+    text-align: center;
+    line-height: 2rem;
+    color:#fff;
+    
+}
+.auther{
+   opacity: 0;
+    position: absolute;
+    margin-top:-3rem;
+    width:100%;
+    height:2.8rem;
+background:#25252547;
+display:flex;
+justify-content: space-around;
+}
+.auther div{
+    margin-top:0.5rem;
+    color:#fff;
+    font-weight: bold;
+}
+
+.auther div img{
+    border-radius: 50%;
+}
+.auther div:last-child{
+    width:4rem;
+    height:2rem;
+    background:#fff;
+    color:#444;
+    border-radius:10%;
+    text-align: center;
+    line-height: 1.7rem;
+}
+.auther.bounce{
+    animation: bounceIn 1.5s linear 1;
+    opacity: 1;
+    z-index:99
+}
+.auther.rotateOut{
+    animation: rotateOut 1.5s linear 1;
+    
+}
+@-webkit-keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3) translate3d(0, -1000px, 0);
+    }
+  
+    20% {
+      transform: scale3d(1.1, 1.1, 1.1)  translate3d(0, 30px, 0);
+    }
+  
+    40% {
+      transform: scale3d(0.9, 0.9, 0.9)  translate3d(0, 20px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: scale3d(1.03, 1.03, 1.03)  translate3d(0, 10px, 0);
+    }
+  
+    80% {
+      transform: scale3d(0.97, 0.97, 0.97)  translate3d(0, 5px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: scale3d(1, 1, 1)  translate3d(0, 0px, 0);
+    }
+  }
+  @keyframes rotateOut {
+    from {
+      transform-origin: center;
+      opacity: 1;
+    }
+  
+    to {
+      transform-origin: center;
+      transform: rotate3d(0, 0, 1, 200deg);
+      opacity: 0;
+    }
+  }
+/* 航拍与手机 */
+/* 总 */
+.two{
+    display: flex;
+    justify-content: space-between;
+  
+}
+.airplane,.phone{
+    width:50%;
+    position: relative;
+}
+.airplane>div:first-child,.phone>div:first-child{
+    text-align: center;
+    margin:2.5rem auto;
+    font-size: 32px;
+    color: #444;
+    letter-spacing: 4px;
+    display:flex;
+    justify-content: space-between;
+    width:40%
+}
+.airplane>div:first-child{
+    margin-left:17rem;
+}
+.airplane div:first-child i,.phone div:first-child i{
+    border:4px solid rgba(61, 223, 28, 0.952);
+    border-radius:50%;
+    height:0.5rem;
+    width:0.5rem;
+    margin-top:0.8rem;
+}
+
+.plane,.mobile{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+   
+}
+.plane>div,.mobile>div{
+    width:285px;
+    height:285px;
+    overflow: hidden;
+    margin-top:1rem;
+  
+}
+.plane>div>div:first-child,.mobile>div>div:first-child,.plane div a,.mobile div a{
+    opacity: 0;
+    transition: all .5s linear;
+}
+.plane div a img,.mobile div a img{
+    display: block;
+    height: 100%;
+    width: auto;
+    margin-top: auto;
+    cursor: pointer;
+    position: relative;
+   opacity: 0;
+   transition: all .1s linear;
+}
+.plane>div:first-child,.mobile>div:first-child{
+    background:rgba(209, 204, 204, 0.716);
+    margin:1rem 0rem 1rem 7rem;
+}
+/* 假框 */
+.two>.airplane>.plane>div>.fake,
+.two>.phone>.mobile>div>.fake
+{
+    position: absolute;
+    width:286px;
+    height:287px;
+    perspective:600px;
+    display: flex;
+    flex-wrap: wrap;
+    background:transparent;
+    opacity: 1;
+    border:1px solid rgba(68, 68, 68, 0.336);
+}
+.two>.airplane>.plane>div:nth-child(3)>.fake,
+.two>.airplane>.plane>div:nth-child(4)>.fake,
+.two>.phone>.mobile>div:nth-child(3)>.fake,
+.two>.phone>.mobile>div:nth-child(4)>.fake{
+    top:29.4rem;
+}
+.two>.airplane>.plane>div:nth-child(1)>.fake,
+.two>.airplane>.plane>div:nth-child(2)>.fake,
+.two>.phone>.mobile>div:nth-child(1)>.fake,
+.two>.phone>.mobile>div:nth-child(2)>.fake{
+    top:9.5rem;
+}
+.two>.phone>.mobile>div>.fake>p,
+.two>.airplane>.plane>div>.fake>p
+{
+    width:95px;
+    height:94px;
+ position: absolute;
+margin:0;
+padding:0;
+background: transparent
+}
+.two .fake.fei p{
+    border:1px solid rgba(68, 68, 68, 0.336);
+}
+.two .fake.fei p:nth-child(1){-webkit-transform:rotateX(30deg) rotateY(10deg) translateZ(400px);}
+.two .fake.fei p:nth-child(2){-webkit-transform:rotateX(330deg) rotateY(10deg) translateZ(400px);}
+.two .fake.fei p:nth-child(3){-webkit-transform:rotateX(3450deg) rotateY(10deg) translateZ(400px);}
+.two .fake.fei p:nth-child(4){-webkit-transform:rotateX(-30deg) rotateY(-10deg) translateZ(400px);}
+.two .fake.fei p:nth-child(5){-webkit-transform:rotateX(330deg) rotateY(10deg) translateZ(400px);}
+.two .fake.fei p:nth-child(6){-webkit-transform:rotateX(40deg) rotateY(20deg) translateZ(400px);}
+.two .fake.fei p:nth-child(7){-webkit-transform:rotateX(340deg) rotateY(10deg) translateZ(400px);}
+.two .fake.fei p:nth-child(8){-webkit-transform:rotateX(3450deg) rotateY(60deg) translateZ(400px);}
+.two .fake.fei p:nth-child(9){-webkit-transform:rotateX(230deg) rotateY(10deg) translateZ(400px);}
+/* 第一个方块 */
+.plane div:first-child div,.mobile div:first-child div{
+    position: relative;
+}
+.plane>div:first-child>div>p,.mobile>div:first-child>div>p{
+    width: 88px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.plane div:first-child div div:nth-child(2),.mobile div:first-child div div:nth-child(2){
+    font-size: 24px;
+    color: #111;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: 700;
+}
+.plane div:first-child div div:nth-child(3),.mobile div:first-child div div:nth-child(3){
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    padding-top: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.plane div:first-child div a div,.mobile div:first-child div a div{
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 24px;
+    background: #46d233;
+    color: #fff;
+    font-size: 16px;
+}
+/* 航拍 */
+.plane>div:nth-child(3){
+    margin-left:7rem;
+}
+
+.plane>div:nth-child(2) a img{
+    margin-left:-14rem;
+}
+
+/* 手机 */
+.mobile>div:nth-child(3){
+    margin-left:7rem;
+}
+
+.mobile>div:nth-child(2) a img{
+    margin-left:-3rem;
+}
+.mobile{
+    margin-right:5rem;
+    margin-left:-5rem
+}
+/* 文字 and 其他文字*/
+.pic_font{
+    width:285px;
+    position: absolute;
+    margin-top:-8rem;
+    color:#fff;
+    height:8rem;
+background:#44444440;
+flex-wrap: wrap;
+}
+.pic_font div{
+    margin:4rem 0.3rem 0 ;
+    font-weight: 500;
+}
+.two>div>div:nth-child(2)>div:hover .pic_font div{
+    animation: shake .4s linear ;}
+@keyframes shake {
+    from {
+        transform: rotate(0deg);
+    }
+    30%{
+      transform: rotate(10deg);
+    }
+    60%{
+      transform: rotate(-10deg);
+    }
+    80%{
+        transform:translateY(-120px)
+    }
+    to {
+        
+      transform: rotate(0deg) translateY(0px);
+    }
+  }
+/* 轮播 */
+.carousel{
+    width:100%;
+    height:500px;
+    overflow: hidden;
+    position: relative;
+}
+.carousel>.carousel_info{
+    position: relative;
+}
+.carousel>.carousel_info>.carousel-pic{
+    left:0rem;
+    position: relative;
+}
+/* 箭头 */
+.carousel>.carousel_info>.arrow{
+    position: absolute;
+   
+}
+.carousel>.carousel_info>.arrow>div{
+    
+    cursor: pointer;
+}
+.carousel>.carousel_info>.arrow>div:first-child{
+    margin-top:8rem;
+    margin-left:3rem;
+}
+.carousel>.carousel_info>.arrow>div:last-child{
+    margin-top:-5rem;
+    margin-left:79rem;
+}
+/* 图片 */
+.carousel-pic>div{
+overflow: hidden;
+position: absolute;
+display: flex;
+}
+.carousel-pic>div>a>img{
+    margin:-13rem -10rem;
+    width:800px;
+    height:700px
+}
+.carousel-pic>div:nth-child(2){
+    top:0rem;
+} 
+/* 轮播文字 */
+.carousel-pic>div>a>div{
+    position: absolute;
+    height:300px;
+    margin-top:-3rem;
+    color:rgba(245, 245, 245);
+    background: rgba(17, 17, 17, 0.371);
+    z-index: 990;
+    width:640px;
+}
+.carousel-pic>div>a>div>p:first-child{
+    font-size:20px;
+}
+/* 按钮 */
+.btn{
+    width:202px;
+    height:42px;
+    border:1px solid rgba(68, 68, 68, 0.397);
+    text-align: center;
+    line-height: 2.5rem;
+    margin:2rem auto;
+    cursor: pointer;
+}
+.btn:hover{
+    border:1px solid #46d233;
+    color:#46d233;
+}
+/* 热门摄影师 */
+.hot_auther{
+    display:flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.hot_auther>div{
+   opacity: 0;
+    width:285px;
+    height:285px;
+}
+.hot_auther>div>div:first-child{
+    overflow: hidden;
+    width:100%;
+    height:120px;
+}
+.hot_auther div div:nth-child(2) a>img{
+    border-radius: 50%;
+    margin:-2rem 7rem 0;
+   
+}
+.hot_auther div div:nth-child(2) a i{
+   position: absolute;
+    margin:0.3rem -7.9rem;
+    cursor: pointer;
+}
+.hot_auther div div:nth-child(3) div:first-child a{
+    font-weight: bold;
+    font-family: "黑体";
+    color:#000;
+    font-size:20px;
+}
+.hot_auther div div:nth-child(3) div:first-child{
+    text-align: center;
+    margin-top:1rem;
+}
+.hot_auther div div:nth-child(3) div:last-child{
+    height:70px;
+    overflow: hidden;
+    padding:5px
+}
+.hot_auther div div:nth-child(3) div:last-child p{
+    font-size: 14px;
+    color:#444;
+    text-align: center 
+}
+
+@keyframes flash{
+    from{
+        transform: scale(1.1);
+        opacity:0.8
+    }
+    
+    40%{
+        transform: scale(1);
+        opacity:0.4
+    }
+    
+    80%{
+        transform: scale(1.1);
+        opacity:0.8
+    }
+    to{
+        transform: scale(1);
+        opacity:1
+    }
+}
+/* qita */
+.other{
+    margin-top:5rem;
+}
+.other>div:last-child{
+    width:285px;
+    height:285px;
+background:#444;
+margin-top:1rem;
+position: relative;
+}
+.other>div:last-child>img{
+margin:2rem 6rem;
+}
+
+.other>div:last-child>div>img{
+    position: absolute;
+    top:2.5rem;
+    left:4.7rem;
+    width:152px;
+    height:152px;
+    opacity: 0;
+    transition: all .5s linear
+}
+.other>div:last-child>div{
+text-align: center;
+color:#fff;
+
+}
+.other>div:last-child>div>p:nth-child(1){
+    font-weight: bold;
+    font-size:24px;
+    margin-top:-2rem;
+}
+.other>div:last-child>div>p:nth-child(2){
+    font-size:14px;
+    margin-top:0rem;
+}
+.other>div:last-child>.bottomErweima>img.scan{
+    opacity: 1;
+}
+.other>div:last-child>div>div{
+    display: block;
+    background: #46d233;
+    width:50%;
+    margin-left:5rem;
+    height:2.5rem;
+    line-height: 2.3rem;
+    color:#fff;
+    cursor: pointer;
+    margin-top:1rem;
+}
+.other>div{
+    opacity: 0;
+}
+.other>div.rotateDown{
+    animation:rotateInDownRight 1s linear;
+    opacity: 1;
+}
+.other>div:nth-child(2n).rotateDown{
+    animation: rotateInDownLeft 1s linear;
+}
+.other>div>.pic_font{
+    opacity: 0;
+    
+}
+.other>div>.pic_font.ani{
+    
+    animation: textAni 1s linear 1300ms forwards;
+   
+}
+.other>div:hover .pic_font>div{
+    animation: shakeOut .4s linear
+}
+@keyframes rotateInDownLeft {
+    from {
+      transform-origin: left bottom;
+      transform: rotate3d(0, 0, 1, -90deg);
+      opacity: 0;
+    }
+    to {
+      transform-origin: left bottom;
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  @keyframes rotateInDownRight {
+    from {
+      transform-origin: right bottom;
+      transform: rotate3d(0, 0, 1, 90deg);
+      opacity: 0;
+    }
+    to {
+      transform-origin: right bottom;
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  @keyframes textAni {
+    from {
+       
+      opacity: 0;
+      transform: scale(0.1) rotate(30deg);
+      transform-origin: center bottom;
+    }
+  
+    50% {
+      transform: rotate(-10deg);
+    }
+  
+    70% {
+      transform: rotate(3deg);
+    }
+  
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes shakeOut {
+    from {
+        transform: rotate(0deg);
+    }
+    30%{
+      transform: rotate(10deg) translateX(100px);
+    }
+    60%{
+      transform: rotate(-10deg) translateX(-20px);
+    }
+    to {
+        
+      transform: rotate(0deg) translateX(0px);
+    }
+  }

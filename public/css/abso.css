@@ -1,0 +1,14 @@
+.header{
+    position: absolute;
+    z-index:990;
+    width:100%;
+}
+.header .head .left div ul li a,
+.header .head .right>div>.select>div>span,
+.header .head .right>div:nth-child(2)>div:first-child>a
+{
+    color:#fff;
+}
+.header .head .right div svg{
+    fill:#fff
+}
